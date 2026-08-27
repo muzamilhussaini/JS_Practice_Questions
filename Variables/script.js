@@ -11,8 +11,8 @@
 
 const fullName = "Muzamil";
 let age = 21;
-let university = "BUITEMS"
+let university = "BUITEMS";
 
-console.log(`My name is ${fullName}.`)
-console.log(`I am ${age} years old.`)
-console.log(`I study at ${university}.`)
+console.log(`My name is ${fullName}.`);
+console.log(`I am ${age} years old.`);
+console.log(`I study at ${university}.`);
