@@ -69,3 +69,25 @@ for (let i = 5; i >= 1; i--) {
         console.log("Liftoff!")
     }
 }
+
+// Sum of Even Numbers
+
+let even = 0;
+
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 === 0) {
+        even += i;
+    } 
+}
+console.log(even);
+
+
+// Sum of Odd Numbers
+
+let odd = 0;
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 !== 0){
+        odd += i;
+    }
+}
+console.log(odd);
