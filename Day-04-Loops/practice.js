@@ -133,7 +133,7 @@ for(let i = 1; i <= 5; i++) {
     console.log(row);
 };
 
-for(let i = 5; i >= 1; i--) {
+for (let i = 5; i >= 1; i--) {
     let row = "";
     for(let j = 1; j <= i; j++) {
         row += i
@@ -141,7 +141,7 @@ for(let i = 5; i >= 1; i--) {
     console.log(row);
 }
 
-for(let i = 1; i <= 5; i++) {
+for (let i = 1; i <= 5; i++) {
     let row = "";
     for(let j = 5; j >= i; j--) {
         row += i
@@ -262,5 +262,74 @@ for (let i = 1; i <= 10; i++) {
             }
         }
         console.log(row);
+    }
+}
+
+// Mini Project — ATM Menu
+// Create a program with:
+// let balance = 5000;
+// let choice = "withdraw";
+// let amount = 2000;
+
+// No loops required.
+
+let balance = 5000;
+let choice = "withdraw";
+let amount = 2000;
+
+if (choice === "check") {
+    console.log(balance);
+} else if (choice === "withdraw" && amount <= balance) {
+    console.log("withdraw successfully");
+} else if (amount > balance) {
+    console.log("insufficient funds");
+} else {
+    console.log("invalid option");
+};
+
+
+let table = 2
+for (let i = 1; i <= 10; i++) {
+    let result = table * i
+    console.log(`${table} * ${i} = ${result}`)
+}
+
+for (let i = 3; i <= 3; i++) {
+    for (let j = 1; j <= 10; j++) {
+        console.log(`${i} * ${j} = ${i * j}`)
+    }
+}
+
+for (let i = 1; i <= 5; i++) {
+    let top = "";
+    for (let j = 1; j <= i; j++) {
+        top += j
+    }
+    console.log(top);
+}
+for (let q = 4; q >= 1; q--) {
+    
+    let bottom = ""
+    for (let k = 1; k <= q; k++) {
+        bottom += k
+    }
+    console.log(bottom)
+}
+
+for (let i = 1; i <= 5; i++) {
+    let top = "";
+    for (let j = 1; j <= i; j++) {
+        top += "*"
+    }
+    console.log(top);
+    if (i === 5) {
+        for (let q = 4; q >= 1; q--) {
+            
+            let bottom = ""
+            for (let k = 1; k <= q; k++) {
+                bottom += "*"
+            }
+            console.log(bottom)
+        }
     }
 }
