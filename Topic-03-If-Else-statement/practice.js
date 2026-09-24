@@ -320,7 +320,7 @@ if (Age >= 12 && Age <= 17) {
 console.log(`For your age the ticket amount is ${Ticket}.`);
 
 
-// Challenge 2 — Password Strength Checker
+// Challenge Q — Password Strength Checker
 // Rules:
 
 // Length less than 6
@@ -351,7 +351,7 @@ if (passWord.length < 6) {
 // console.log(passWord.length)
 
 
-// Challenge 3 — Electricity Bill
+// Challenge Q — Electricity Bill
 // Rules:
 // 0–100 units
 // Rs. 10 per unit
@@ -371,12 +371,15 @@ if (units > 0 && units <= 100) {
     units = units * 10;
 } else if (units > 100 && units <= 200){
     units = units * 15;
+    
 } else {
     units = units * 20;
 }
 
 console.log(`Total Bill: ${units}`);
 
+
+// Challenge Q — Leap Year Checker
 
 let year = 1600;
 console.log(year % 400);
@@ -394,3 +397,32 @@ if (year % 4 === 0 && year % 400 !== 0 && year % 100 !== 0 ) {
 }
 
 console.log(leapYear);
+
+
+
+// Challenge Q — Secret Number and Guess the number
+
+// Create:
+
+let secretNumber = 7;
+let guess = 7;
+
+// Output:
+
+// Correct Guess
+// or
+// Too High
+// or
+// Too Low
+
+// No hints.
+
+if (secretNumber === guess) {
+    console.log("Correct Guess");
+} else if (guess > secretNumber){
+    console.log("Too High");
+} else if (guess < secretNumber) {
+    console.log("Too Low");
+} else {
+    console.log("Invalid Input!");
+}
