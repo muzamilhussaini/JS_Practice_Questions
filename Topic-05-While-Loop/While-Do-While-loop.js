@@ -249,3 +249,30 @@ while (attempt <= 3) {
     console.log("Incorrect PIN. Try again");
     attempt++;
 }
+
+
+// Reverse Number Challenge
+// This one is harder.
+// Suppose:
+// 12345
+
+// and then:
+// 1234
+// The question is:
+// How do we build:
+
+// 5
+// 54
+// 543
+// 5432
+// 54321
+
+// That's your puzzle. 😈
+
+let digit = 12345;
+let L = "";
+while (digit > 0) {
+    L += digit % 10;
+    digit = Math.floor(digit / 10)
+    console.log(L)
+}
