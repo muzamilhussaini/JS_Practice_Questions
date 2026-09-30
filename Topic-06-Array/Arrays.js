@@ -37,12 +37,14 @@ console.log(total);
 // Challenge 2 — Count Even Numbers 
 
 let num = [3, 8, 10, 7, 15, 20];
-for(let i = 0; i < num.length; i++) {
-    if(num[i] % 2 === 0) {
+let count = 0;
+for (let i = 0; i < num.length; i++) {
+    if (num[i] % 2 === 0) {
         // let arr = num[i]
-        console.log(`Even numbers = ${num[i]}`);
+        count++
     }
 }
+console.log(`Even numbers = ${count}`);
 
 
 // ===============================================================================
@@ -53,16 +55,14 @@ for(let i = 0; i < num.length; i++) {
 // Output:
 // Largest Number = 99
 let numArr = [12, 45, 7, 99, 34];
-let largest;
+let largest = 0;
 
 for (let i = 0; i < numArr.length; i++) {
-    const element = numArr[i];
-    // console.log(element)
-    if (numArr[i] >= numArr) {
+    if (numArr[i] > largest) {
         largest = numArr[i]
     }
 }
-console.log(largest)
+console.log(`largest number is ${largest}`)
 
 
 
@@ -81,13 +81,19 @@ let frs = ["Apple", "Banana", "Mango"];
 // Use loop
 // Use if
 // Don't use .includes()
-
-for(let i = 0; i < frs.length; i++) {
+let found = false;
+for (let i = 0; i < frs.length; i++) {
     if (frs[i] === "Mango" || frs[i] === "mango") {
-        console.log("Found");
-    } else {
-        console.log("Not Found");
+        found = true
+
+        if (found) {
+            console.log("Found");
+        } 
+        else {
+            console.log("Not Found");
+        }
     }
+
 }
 
 
@@ -105,7 +111,7 @@ let students = [
 // 3. Muzamil
 // 4. Sara
 
-for(let i = 0; i < students.length; i++) {
+for (let i = 0; i < students.length; i++) {
     let studentNames = `${i + 1}. ${students[i]}`
     console.log(studentNames);
 }
