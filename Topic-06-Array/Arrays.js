@@ -85,17 +85,15 @@ let found = false;
 for (let i = 0; i < frs.length; i++) {
     if (frs[i] === "Mango" || frs[i] === "mango") {
         found = true
-
-        if (found) {
-            console.log("Found");
-        } 
-        else {
-            console.log("Not Found");
-        }
     }
-
 }
 
+if (found) {
+    console.log("Found");
+} 
+else {
+    console.log("Not Found");
+}
 
 
 // ===============================================================================
@@ -104,7 +102,8 @@ let students = [
     "Ali",
     "Ahmed",
     "Muzamil",
-    "Sara"
+    "Sara",
+    "Juma"
 ];
 // 1. Ali
 // 2. Ahmed
@@ -126,10 +125,62 @@ for (let i = 0; i < students.length; i++) {
 // Sum = 50
 // Average = 12.5
 
-let numb = [5, 10, 15, 20];
+let numb = [5, 10, 15, 20, 45, 5];
 let sum = 0;
 for (let i = 0; i < numb.length; i++) {
     sum += numb[i]
 }
 console.log(`Sum = ${sum}`);
-console.log(`Average = ${sum / 4}`);
+console.log(`Average = ${sum / numb.length}`);
+
+// ===============================================================================
+// Count Odd Numbers
+let oddNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let countOddNumber = 0;
+
+for (let i = 0; i < oddNumber.length; i++) {
+    const element = oddNumber[i];
+    if (element % 2 !== 0) {
+        countOddNumber++
+    }
+}
+console.log(`Odd Numbers ${countOddNumber}`);
+
+
+// ===============================================================================
+// Smallest Number 
+
+let arrayNumber = [45, 12, 89, 3, 67];
+let smallestNumber = 0;
+
+for (let i = 0; i < arrayNumber.length; i++) {
+    const element = arrayNumber[i];
+    if (smallestNumber === 0) {
+        smallestNumber = element;
+    }
+    if (smallestNumber > element) {
+        smallestNumber = element;
+    }
+}
+console.log(`Smallest Number = ${smallestNumber}`);
+
+
+// ===============================================================================
+// Count Names Starting With "A"
+
+let names = [
+    "Ali",
+    "Ahmed",
+    "Sara",
+    "Ayesha",
+    "Muzamil"
+];
+let includeLetters = 0;
+for (let i = 0; i < names.length; i++) {
+    const element = names[i];
+    if (element.includes("A")) {
+        includeLetters++
+    }
+}
+console.log(`Names starting with A = ${includeLetters}`);
