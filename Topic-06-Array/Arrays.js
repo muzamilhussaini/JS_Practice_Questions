@@ -184,3 +184,140 @@ for (let i = 0; i < names.length; i++) {
     }
 }
 console.log(`Names starting with A = ${includeLetters}`);
+
+
+// ===============================================================================
+// let skill = ["HTML", "CSS", "JavaScript"];
+
+// console.log(skill.includes("CSS"));
+// console.log(skill.includes("Python"));
+// console.log(skill.indexOf("CSS"));
+// console.log(skill.indexOf("Python"));
+
+// console.log(skill.join());
+// console.log(skill.join(" | "));
+
+
+// ===============================================================================
+// Check Skill
+let skill = ["HTML", "CSS", "JavaScript"];
+
+if (skill.includes("CSS")) {
+    console.log("Skill Found");
+} else {
+    console.log("Skill Not Found");
+}
+
+
+// ===============================================================================
+// Find Position
+
+let fruit = ["Apple", "Banana", "Mango"];
+console.log(`Mango is at index ${fruit.indexOf("Mango")}`);
+
+// ===============================================================================
+// Student List
+let studnts = [
+  "Ali",
+  "Ahmed",
+  "Sara",
+  "Muzamil"
+];
+
+console.log(studnts.join(" | "));
+
+// ===============================================================================
+// Search Student
+if (studnts.includes("Muzamil")) {
+    console.log("Student Found");
+} else {
+    console.log("Student Not Found");
+}
+
+// ===============================================================================
+
+let arr = ["A", "B", "C"];
+
+arr.push("D");
+
+console.log(arr.includes("D"));
+console.log(arr.indexOf("C"));
+console.log(arr.join("-"));
+
+
+// ===============================================================================
+// Mini Project Time 🚀
+
+let courses = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+];
+
+let selectedCourse = "JavaScript";
+
+if (courses.includes(selectedCourse)) {
+    console.log("Course Available");
+} else {
+    console.log("Course Not Available");
+}
+
+// ===============================================================================
+// Shopping Cart
+// Print:
+// 1. Laptop
+// 2. Mouse
+// 3. Keyboard
+
+let cart = [
+    "Laptop",
+    "Mouse",
+    "Keyboard"
+];
+
+for (let i = 0; i < cart.length; i++) {
+    const element = cart[i];
+    let cartItems = `${i + 1}. ${element}`
+    console.log(cartItems);
+}
+
+// ===============================================================================
+// Search Product Position
+let products = [
+    "Mobile",
+    "Laptop",
+    "Headphones",
+    "Camera"
+];
+
+if (products.includes("Laptop")) {
+    console.log(`Laptop found at index ${products.indexOf("Laptop")}`)
+} else {
+    console.log("Product Not Found");
+}
+
+// ===============================================================================
+// Student Attendance Report
+
+let studentNames = [
+    "Ali",
+    "Ahmed",
+    "Sara",
+    "Muzamil"
+];
+// print
+// Ali, Ahmed, Sara, Muzamil
+
+console.log(studentNames.join(", "));
+console.log(`Total Students: ${studentNames.length}`);
+
+
+let books = [
+    "Atomic Habits",
+    "Deep Work"
+];
+
+books.unshift("Clean Code");
+
+console.log(books.join(" | "))
