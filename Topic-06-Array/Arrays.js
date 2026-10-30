@@ -320,4 +320,4 @@ let books = [
 
 books.unshift("Clean Code");
 
-console.log(books.join(" | "))
+console.log(books.join(" | "));
